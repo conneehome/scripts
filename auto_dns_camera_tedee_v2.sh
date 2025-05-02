@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install arp-scan -y
+
 declare -A MAC_PREFIXES
 MAC_PREFIXES["94:c9:60"]="tedeeconnee"
 MAC_PREFIXES["98:a8:29"]="cameraconnee"
