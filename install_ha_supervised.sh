@@ -1,6 +1,6 @@
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y
 
-apt install \
+apt install -y \
 network-manager \
 systemd-resolved \
 apt-utils
@@ -10,7 +10,7 @@ systemctl disable --now networking.service && \
 mv /etc/network/interfaces /etc/network/interfaces.disabled && \
 systemctl restart NetworkManager
 
-apt install \
+apt install -y \
 curl \
 lsb-release \
 udisks2
