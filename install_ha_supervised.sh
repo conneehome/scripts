@@ -2,7 +2,8 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y && 
 
 apt install \
 network-manager \
-systemd-resolved
+systemd-resolved \
+apt-utils
 
 systemctl restart systemd-resolved.service && \
 systemctl disable --now networking.service && \
@@ -21,4 +22,4 @@ wget -O os-agent-aarch64.deb $(curl -s https://api.github.com/repos/home-assista
 
 #Install supervisor
 curl -L -o homeassistant-supervised.deb https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-apt install ./homeassistant-supervised.deb
+sudo BYPASS_OS_CHECK=true apt install ./homeassistant-supervised.deb
