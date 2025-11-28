@@ -5,6 +5,7 @@ sudo apt-get install arp-scan -y
 declare -A MAC_PREFIXES
 MAC_PREFIXES["94:c9:60"]="tedeeconnee"
 MAC_PREFIXES["98:a8:29"]="cameraconnee"
+MAC_PREFIXES["3c:84:27"]="luxpowerconnee"
 
 HOSTS_FILE="/etc/hosts"
 
